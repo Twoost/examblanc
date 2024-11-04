@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 150%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 20%;
+    border-radius: 50%;
+    border: 1px solid;
+    margin-bottom: 1%;
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.imran {
+    display: flex;
+}
+
+.container {
+    gap: 20%;
+    padding: 5%;
+    display: grid;
+    grid-template: 100px 50px ;
+    /* grid-column-start:  100px 1fr; */
+    /* grid-row-start: 100px ; */
+    grid-template-areas:
+    "exp skill"
+    "edu pro";
+}
+
+.experience {
+    border: 1px solid;
+    grid-area: exp;
+}
+
+.competence {
+    border: 1px solid;
+    grid-area: skill;
+}
+
+.education {
+    border: 1px solid;
+    grid-area: edu;
+}
+
+.projet {
+    border: 1px solid;
+    grid-area: pro;
+}
+
+/* Classe des sous catégories */
+
+.experienc {
+    background-color: yellow;
+    font-weight: bold;
+    text-align: center;
+}
+
+.educatio {
+    background-color: yellow;
+    font-weight: bold;
+    text-align: center;
+}
+
+.skil {
+    background-color: yellow;
+    font-weight: bold;
+    text-align: center;
+}
+
+.proje {
+    background-color: yellow;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.formulaire {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10%;
+    text-align: center;   
+}
+
+.pied {
+    background-color: lightblue;
+    display: flex;
+    border: 1px solid;
+    width: 100%;
+    height: 28vh;
+    text-align: center;
+    font-size: 150%;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width:768px) {
+    .container {
+        gap: 20%;
+        padding: 5%;
+        display: grid;
+        grid-template: 100px 50px ;
+        grid-template-areas: 
+        "exp" 
+        "skill"
+        "edu"
+        "pro";
+    }
+}
+
+
